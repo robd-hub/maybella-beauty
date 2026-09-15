@@ -1,0 +1,51 @@
+# Handoff Notes — Maybella Beauty Site Rebuild
+
+## Session: 2026-09-15 (built via Claude/Cowork, handing off to Claude Code)
+
+### Why this exists
+
+Rob wants to migrate maybellabeauty.com off Shopify ($40/mo) onto free static hosting (GitHub + Vercel), as a favor for his friend May Balabbo, who owns the brand. Framed initially as "recreate maybellabeauty.com" — scoped down after clarifying questions (see Decisions below) to a visual mockup, not a full e-commerce rebuild.
+
+### What was built
+
+A 7-page static HTML/CSS/JS site replicating maybellabeauty.com's real content and structure (see `CLAUDE.md` for the full real-vs-placeholder breakdown). No framework, no backend, no real checkout.
+
+Deployed as a **preview** deployment to Vercel:
+- URL at end of this session: `https://scratchpad-6q9wgkamr-designimp-projects.vercel.app`
+- This was pushed to an existing shared project called `scratchpad` under the `designimp-projects` Vercel team (`team_93KhhffXyNZ1N1vShbgcmRDw`), **not** a dedicated project — see Open Issues below.
+- Deployed via direct file upload (`deploy_to_vercel`), not git-connected — no GitHub repo exists yet.
+
+Source code was also packaged as `maybella-beauty-mockup.zip` and delivered to Rob directly.
+
+### Decisions made this session (and why)
+
+1. **Relationship**: May is a friend, a cold-pitch-style "free mockup" isn't really the framing — this is a favor/direct build, not outreach bait. (Though it could double as a portfolio case study later, with May's permission.)
+2. **Scope: visual mockup only, not a working store.** May isn't a serious e-commerce operator — she doesn't currently use online checkout at all. She takes orders via DM and gets paid via GCash QR code, manually. Building real cart/checkout/payment integration would solve a problem she doesn't have and add real complexity (payment gateway account, inventory syncing, someone to maintain it). **Do not add this without checking with Rob first** — it's a deliberate scope boundary, not a gap to fill in.
+3. **Deployment target: Vercel**, using Rob's connected Vercel account/team rather than asking him to set up a separate account.
+4. Product photography was **not** scraped from the live site — used illustrative CSS color swatches instead, both to avoid using someone else's product photos without a clear ask, and because "visual mockup" was the explicitly chosen scope.
+5. The FAQ's payment-methods answer was rewritten from the original's leftover Shopify boilerplate ("Visa/Mastercard/PayPal via checkout") to reflect how May actually takes payment (GCash + bank transfer via DM) — this is a **content correction**, not a stylistic choice, and should stay unless May starts using real online checkout.
+
+### Open issues / known gaps
+
+- **No GitHub repo yet.** Needed before setting up Vercel's git integration for auto-deploy-on-push. Whoever picks this up should create one (suggest `robd-hub/maybella-beauty` to match Rob's existing repo naming pattern — see `ayuribeautylounge` and `designimp` repos under the same GitHub org) and push this code to it.
+- **Vercel project is a shared scratch project, not dedicated.** The Vercel account used here (`designimp-projects` team) hit a `403 forbidden — you don't have permission to create a project` error when attempting to create a new project via the API. Deployments were redirected to an existing project literally named `scratchpad`. Before this goes further, someone with admin rights on that Vercel team should either fix the permission or create a proper `maybella-beauty` project from the dashboard directly.
+- **GCash QR code is a placeholder graphic**, not a real one. Needs May's actual QR image.
+- **TikTok URL is a dead link** (`href="#"`) — handle `@maybellabeautyph` is known but the confirmed URL wasn't.
+- **Policy pages not built**: refund/privacy/terms/contact-info pages exist on the real Shopify site but weren't recreated here. Low priority unless this goes live for real (a live commercial site probably needs at least a privacy policy).
+- **Product photos**: all placeholders (see CLAUDE.md's color-swatch mapping). This is the biggest thing standing between "mockup to show May" and "site she could actually launch."
+
+### Next steps (suggested order)
+
+1. Get real product photos from May (or take some) and swap into each product card.
+2. Get May's real GCash QR code image.
+3. Confirm the real TikTok URL.
+4. Create a GitHub repo, push this code, connect it to a dedicated Vercel project (fixing the permission issue first if it persists).
+5. Decide whether policy pages (privacy/refund/terms) are needed before showing this to May as launch-ready vs. just a concept preview.
+6. If May likes it and wants to actually cut over: point her domain's DNS at the new Vercel deployment, cancel/downgrade the Shopify subscription, and confirm nothing else (email, apps) was depending on Shopify infrastructure.
+
+### Useful reference
+
+- Real site (source of truth for copy): maybellabeauty.com
+- Rob's existing Vercel projects for pattern reference: `ayuribeauty` (linked to GitHub `robd-hub/ayuribeautylounge`), `lanna-labs` (linked to `robd-hub/designimp`)
+- This project's business context lives in the "Claude Business Consultant" project (Rob's designimp.com marketing strategy: free mockups as the outreach hook — see `outreach-campaign-review-aug2026.md` there for the broader campaign this kind of build supports).
+
