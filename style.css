@@ -115,6 +115,9 @@ nav.main-nav a:hover, nav.main-nav a.active { color: var(--rose); }
   font-size: 1.6rem;
   color: var(--rose-dark);
   cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+  line-height: 1;
 }
 
 @media (max-width: 1080px) {
@@ -475,10 +478,11 @@ section { padding: 72px 0; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
   color: var(--ink);
 }
 
-.faq-q .plus { color: var(--rose); font-size: 1.3rem; transition: transform 0.2s; }
+.faq-q .plus { flex-shrink: 0; color: var(--rose); font-size: 1.3rem; transition: transform 0.2s; }
 .faq-item.open .faq-q .plus { transform: rotate(45deg); }
 
 .faq-a {
@@ -691,4 +695,16 @@ footer a:hover { color: var(--rose); }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 10px 16px;
+}
+
+/* ---------- Mobile tightening ---------- */
+@media (max-width: 600px) {
+  section { padding: 48px 0; }
+  .hero { padding: 56px 0 40px; }
+  .page-hero { padding: 40px 0 32px; }
+  footer { padding: 40px 0 24px; }
+  .founder-card { padding: 28px 24px; }
+  .contact-card, .qr-card { padding: 24px; }
+  .contact-form { padding: 24px; }
+  .section-head { margin-bottom: 32px; }
 }
