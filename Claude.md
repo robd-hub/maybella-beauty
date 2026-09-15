@@ -58,7 +58,7 @@ style.css        All styles — single shared file
 
 script.js        Mobile nav toggle, active-link highlight, FAQ accordion
 
-assets/          Real photos — see "Real brand assets" above for full breakdown; also favicon.ico, favicon.png, apple-touch-icon.png (generated Sept 2026 — a rose-square "M" monogram in Didot, matching the brand's --rose color; linked in the <head> of all 8 pages)
+assets/          Real photos — see "Real brand assets" above for full breakdown; also favicon.ico, favicon.png, apple-touch-icon.png (generated Sept 2026 — a black "M" monogram in Didot on a white rounded square; linked in the <head> of all 8 pages. First version used the brand --rose color, changed to black-on-white per Rob's request.)
 
 Each HTML page duplicates the header nav and footer inline (no templating/includes, since there's no build step). If you add a page or change nav/footer, update it in all 8 HTML files — there's no single source of truth for the header/footer markup. If this becomes a maintenance pain, worth migrating to a static site generator (Astro/11ty) or at least a tiny build script that injects partials — not done yet because the brief was "keep it free and simple."
 Design system
