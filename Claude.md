@@ -19,7 +19,7 @@ All 16 product names, shades, and prices (10 matte lip tints ₱149, 5 lip gloss
 Founder story, mission, vision, "May Balabbo" name and bio quote
 All 9 FAQ questions (answers lightly edited — see below)
 Reseller programme copy (4-step process, perks, "no franchise fee", 24–48hr response time)
-Contact channels: info@maybellabeauty.com, Facebook business page (facebook.com/profile.php?id=100089975888895 — this is the real Maybella page, used as the primary Facebook link sitewide), Instagram @maybellabeauty (instagram.com/maybellabeauty), TikTok @maybellabeautyph (URL still unconfirmed)
+Contact channels: info@maybellabeauty.com, Facebook business page (facebook.com/profile.php?id=100089975888895 — this is the real Maybella page, used as the primary Facebook link sitewide), Instagram @maybellabeauty (instagram.com/maybellabeauty), TikTok @maybellasignature (tiktok.com/@maybellasignature — confirmed by Rob Sept 2026; note the handle differs from the @maybellabeautyph originally guessed from the live site's copy, since that URL was never confirmed)
 
 May also has a personal/hobby Facebook profile (facebook.com/profile.php?id=61550115153456) with 2.6M+ followers — not a Maybella business channel, so it isn't used as a "contact us" link, but it's real social proof worth surfacing. Acknowledged on about.html as a small "Followed by 2.6M+ on Facebook" line under the founder bio, linking out to that profile.
 Nav structure and page names
@@ -33,7 +33,6 @@ Invented / placeholder — flag to Rob before treating as final:
 Product imagery: Sexy (Lip Gloss) and Fairy Glow Powder (Loose Powder) still use CSS gradient "swatches" — no real photo provided for these two yet (mapping is in the <div class="product-swatch" style="background:..."> inline styles — no separate palette file yet, that's worth extracting if this grows).
 GCash QR box (contact.html, .qr-box): a dashed placeholder that says "Your GCash QR code goes here" — intentionally not a real scannable graphic. Replace with May's actual QR image when she provides one.
 FAQ payment answer: original site's FAQ said "Visa, Mastercard, PayPal via checkout" (leftover Shopify boilerplate that doesn't reflect reality). Rewritten here to say GCash + bank transfer via DM, matching how May actually operates. If May starts using a real checkout later, this needs to change back.
-TikTok link: href="#" — the real handle is @maybellabeautyph but no confirmed URL was found; needs the real link.
 Footer says "Design mockup by DesignImp" — remove before/if this ever becomes May's real live site.
 
 Not built at all (present on the real site, out of scope so far): /policies/* pages (refund, privacy, terms, contact-information), Shopee/Lazada/TikTok Shop storefront links (real site lists these as "coming soon" — copy already reflects that).
