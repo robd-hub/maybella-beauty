@@ -16,7 +16,7 @@ What's real vs. invented
 Content was pulled from the live maybellabeauty.com (as of Sept 2026) via fetches of the homepage, /collections/all, /collections/maybella-lip-gloss, /pages/about-us, /pages/contact-us, /pages/faq-s, and /pages/reseller-programme. Treat as real / verified:
 
 All 16 product names, shades, and prices (10 matte lip tints ₱149, 5 lip gloss ₱180, 1 loose powder ₱220)
-Founder story, mission, vision, "May Balabbo" name and bio quote
+Founder story, mission, vision, "May Balabbo" name and bio quote (about.html's Our Story/founder copy was expanded Sept 2026 with fuller text Rob provided directly from the brand's real About Us copy — not scraped, pasted verbatim from Rob with only light edits for site tone and to remove the em dash and the old maybellabeauty.com URL reference)
 All 9 FAQ questions (answers lightly edited — see below)
 Reseller programme copy (4-step process, perks, "no franchise fee", 24–48hr response time)
 Contact channels: maybellashopify@gmail.com (public business email, changed Sept 2026 from info@maybellabeauty.com), Facebook business page (facebook.com/profile.php?id=100089975888895 — this is the real Maybella page, used as the primary Facebook link sitewide), Instagram @maybellabeauty (instagram.com/maybellabeauty), TikTok @maybellasignature (tiktok.com/@maybellasignature — confirmed by Rob Sept 2026; note the handle differs from the @maybellabeautyph originally guessed from the live site's copy, since that URL was never confirmed)
@@ -58,7 +58,7 @@ style.css        All styles — single shared file
 
 script.js        Mobile nav toggle, active-link highlight, FAQ accordion
 
-assets/          Real photos — see "Real brand assets" above for full breakdown
+assets/          Real photos — see "Real brand assets" above for full breakdown; also favicon.ico, favicon.png, apple-touch-icon.png (generated Sept 2026 — a rose-square "M" monogram in Didot, matching the brand's --rose color; linked in the <head> of all 8 pages)
 
 Each HTML page duplicates the header nav and footer inline (no templating/includes, since there's no build step). If you add a page or change nav/footer, update it in all 8 HTML files — there's no single source of truth for the header/footer markup. If this becomes a maintenance pain, worth migrating to a static site generator (Astro/11ty) or at least a tiny build script that injects partials — not done yet because the brief was "keep it free and simple."
 Design system
