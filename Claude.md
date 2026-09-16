@@ -32,7 +32,6 @@ Invented / placeholder — flag to Rob before treating as final:
 
 GCash QR box (contact.html, .qr-box): a dashed placeholder that says "Your GCash QR code goes here" — intentionally not a real scannable graphic. Replace with May's actual QR image when she provides one.
 FAQ payment answer: original site's FAQ said "Visa, Mastercard, PayPal via checkout" (leftover Shopify boilerplate that doesn't reflect reality). Rewritten here to say GCash + bank transfer via DM, matching how May actually operates. If May starts using a real checkout later, this needs to change back.
-Footer says "Design mockup by DesignImp" — remove before/if this ever becomes May's real live site.
 
 Not built at all (present on the real site, out of scope so far): /policies/* pages (refund, privacy, terms, contact-information), Shopee/Lazada/TikTok Shop storefront links (real site lists these as "coming soon" — copy already reflects that).
 Structure
