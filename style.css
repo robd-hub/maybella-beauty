@@ -551,7 +551,55 @@ section { padding: 72px 0; }
   font-weight: 600;
 }
 
+.payment-methods {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--cream-dark);
+}
+
+.payment-methods-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.payment-methods ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-methods li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--cream-dark);
+  font-size: 0.85rem;
+}
+
+.payment-methods li:last-child { border-bottom: none; }
+
+.payment-methods li strong { color: var(--ink); font-weight: 600; flex-shrink: 0; }
+
+.payment-methods li span { color: var(--ink-soft); text-align: right; }
+
+.payment-methods-note {
+  text-align: center;
+  color: var(--ink-faint);
+  font-size: 0.78rem;
+  margin: 10px 0 0;
+}
+
 @media (max-width: 780px) { .contact-grid { grid-template-columns: 1fr; } }
+@media (max-width: 420px) {
+  .payment-methods li { flex-direction: column; gap: 2px; }
+  .payment-methods li span { text-align: left; }
+}
 
 .contact-form {
   max-width: 600px;
