@@ -1,19 +1,19 @@
 :root {
   --cream: #ffffff;
-  --cream-dark: #fcf1f0;
+  --cream-dark: #fbf1f1;
   --ink: #2d1520;
   --ink-soft: #6b7280;
   --ink-faint: #9ca3af;
-  --rose: #d25042;
-  --rose-dark: #b23b2e;
-  --rose-light: #f8d0cc;
-  --rose-pale: #fcf1f0;
+  --rose: #ca4043;
+  --rose-dark: #a43235;
+  --rose-light: #f5cfd0;
+  --rose-pale: #fbf1f1;
   --gold: #c9a96e;
   --gold-soft: #fdf4e7;
   --gold-text: #a07c3a;
   --gold-line: #e8d5a3;
-  --border: #f8d0cc;
-  --border-alt: #fae1de;
+  --border: #f5cfd0;
+  --border-alt: #f7e1e1;
   --radius: 16px;
   --shadow: 0 6px 18px rgba(45, 21, 32, 0.12);
   --serif: 'Cormorant Garamond', Georgia, serif;
@@ -539,7 +539,7 @@ section { padding: 72px 0; }
   margin: 0 auto 16px;
   border-radius: 16px;
   background:
-    repeating-linear-gradient(45deg, #f8d0cc 0 8px, #fff 8px 16px);
+    repeating-linear-gradient(45deg, #f5cfd0 0 8px, #fff 8px 16px);
   border: 3px dashed var(--rose);
   display: flex;
   align-items: center;
