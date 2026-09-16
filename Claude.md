@@ -65,7 +65,7 @@ Each HTML page duplicates the header nav and footer inline (no templating/includ
 Design system
 Restyled Sept 2026 to match Rob's AYURI-STYLE-GUIDE.md (the design-system reference extracted from ayuribeauty.com, his other project) — same editorial/boutique look and feel, applied within Maybella's existing plain-CSS architecture rather than switching to Tailwind (CLAUDE.md's "no framework" rule wins; the guide's own Tailwind snippets were adapted to hand-written CSS custom properties instead). Defined as CSS custom properties at the top of style.css:
 
---rose (#c04f67) / --rose-dark (#9e3d52) / --rose-light (#fad4de) / --rose-pale (#fdf0f3) — primary brand accent (rose = action/interactive: buttons, links, prices)
+--rose (#d25042) / --rose-dark (#b23b2e) / --rose-light (#f8d0cc) / --rose-pale (#fcf1f0) — primary brand accent (rose = action/interactive: buttons, links, prices). Changed Sept 2026 from a magenta-pink (#c04f67) to a coral/terracotta to echo the coral backdrop in the homepage hero photo (hero-may.jpg background is #f0999f) — the literal photo color wasn't usable as a UI color (2.15:1 contrast with white button text, fails WCAG), so this is a deeper, legible coral (4.23:1) with the same hue family instead. --border/--border-alt and --cream-dark were updated to match the new coral tint too, so card borders and alt-bg sections stay cohesive with the new palette.
 --gold (#c9a96e) / --gold-soft / --gold-text / --gold-line — secondary/decorative accent (eyebrow labels, the hairline divider under every H1/section H2, founder "role" label)
 --cream (#ffffff) / --cream-dark (#fdf0f3) — backgrounds (site is white-based now, not the old cream wash)
 --ink (#2d1520) / --ink-soft / --ink-faint — text colors, never pure black
